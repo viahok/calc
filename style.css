@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg,#d1d1d1 55%, #6d6d6d 30%, #707070 15%)
+}
+
+.calculator{
+   position: relative;
+   display: grid;
+   border: 2.475px gray solid;
+   border-radius: 1%;
+   box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+.value{
+    border: 2px gray solid;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    font-size: 18px;
+    text-align: right;
+    grid-column: span 4;
+    user-select: none;
+    align-content: calc();
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.number{
+    width: 65px;
+    height: 65px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 0.1px solid rgb(209, 209, 209);
+    display: grid;
+    place-items: center ;
+    user-select: none;
+}
+
+.number:active{
+transform: scale(0.95);
+}
+
+.number:hover{
+    background-color:rgb(228, 228, 228);
+    cursor:pointer ;
+    transition: 0.6s;
+    }
+
+.minus:hover{
+    background-color:rgb(184, 184, 184);
+    cursor:pointer ;
+    transition: 0.6s;
+    }
+
+.plus:hover{
+    background-color:rgb(184, 184, 184);
+    cursor:pointer ;
+    transition: 0.6s;
+    }
+
+.clear:hover{
+    background-color:rgb(184, 184, 184);
+    cursor:pointer ;
+    transition: 0.6s;
+    }
+
+.multiply:hover{
+    background-color:rgb(184, 184, 184);
+    cursor:pointer ;
+    transition: 0.6s;
+    }
+
+.divide:hover{
+    background-color:rgb(184, 184, 184);
+    cursor:pointer ;
+    transition: 0.6s;
+    }
+
+.number:not(:hover) {
+    transition: 0.6s;
+    scale: 1;
+  }
+
+
+.equal:hover{
+    background-color: rgb(0, 78, 194);
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+
+.clear{
+    background-color: rgb(219, 219, 219);
+    width: 130px;
+    grid-column: span 2;
+    color: rgb(0, 102, 255);
+    font-size: x-large;
+}
+
+.plus{
+    height: 130px;
+    grid-row: span 2;
+    background-color: rgb(219, 219, 219);
+    color: rgb(0, 102, 255);
+}
+
+.equal{
+    background-color: rgb(0, 102, 255);
+    color: aliceblue;
+    
+}
+
+.multiply{  
+    background-color: rgb(219, 219, 219);
+    color: rgb(0, 102, 255);
+}
+
+.divide {  
+    background-color: rgb(219, 219, 219);
+    color: rgb(0, 102, 255);
+}
+
+.minus {  
+    background-color: rgb(219, 219, 219);
+    color: rgb(0, 102, 255);
+}
+
+.point {  
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 102, 255);
+
+}
